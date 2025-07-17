@@ -1,0 +1,126 @@
+body {
+  font-family: 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+  background: #fcfcf5;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.sketch-header, .sketch-footer, .sketch-section, .hero-sketch, .sketch-gallery {
+  border: 2px dashed #353535;
+  border-radius: 18px;
+  box-shadow: 2px 2px 0 #bbb, 6px 6px 0 #eee;
+  background: #fffbe6;
+  margin: 24px;
+  padding: 18px;
+}
+
+.logo-sketch {
+  width: 48px; height: 48px;
+  background: url('logo-sketch.svg') no-repeat center/contain;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+nav {
+  margin-top: 12px;
+}
+nav a {
+  text-decoration: none;
+  color: #273c75;
+  margin: 0 12px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+nav a:hover, .donate-btn {
+  color: #e17055;
+}
+.donate-btn {
+  background: #fdcb6e;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-weight: bold;
+  border: none;
+}
+
+.hero-sketch {
+  text-align: center;
+  background: url('sketch-bg.svg') no-repeat center/cover;
+}
+.hero-sketch h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+  font-family: 'Caveat', cursive;
+}
+.hero-sketch p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.hero-sketch img {
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 0 #bbb;
+  border: 2px dashed #e17055;
+}
+
+.sketch-section h2 {
+  font-family: 'Caveat', cursive;
+  font-size: 2em;
+  color: #636e72;
+}
+
+.sketch-gallery .gallery-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.sketch-gallery img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 2px dashed #00b894;
+  border-radius: 18px;
+  background: #fafafa;
+  box-shadow: 2px 2px 0 #bbb;
+}
+
+.members-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.member-card {
+  background: #f3e5f5;
+  border: 2px dashed #6c5ce7;
+  border-radius: 14px;
+  box-shadow: 2px 2px 0 #bbb;
+  padding: 12px;
+  text-align: center;
+  width: 160px;
+}
+.member-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px dashed #6c5ce7;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .gallery-grid, .members-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sketch-header, .sketch-footer, .sketch-section, .hero-sketch, .sketch-gallery {
+    margin: 8px;
+    padding: 8px;
+  }
+  nav a {
+    margin: 0 4px;
+  }
+}
+
+/* SEO & Accessibility */
+img[alt] { outline: none; }
+a:focus, button:focus { outline: 2px solid #00b894; }
